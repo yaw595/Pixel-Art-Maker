@@ -1,0 +1,112 @@
+/* General BODY style */
+
+body {
+    text-align: center;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* HEADER (with a little change to the color)*/
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+    /* Changing the color of the header */
+    border: none;
+    border-radius: 25px;
+    background: red;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    background: -o-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
+    background: -moz-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* ART AREA */
+
+h2 {
+    margin: 1em 0 0.25em;
+    padding: 15px;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid gray;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+/* TODO: add custom style the elements */
+
+#inputHeight,
+#inputWeight,
+#colorPicker {
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
+}
+
+#inputHeight:focus,
+#inputWeight:focus,
+#colorPicker:focus {
+    outline: none !important;
+}
+
+#inputHeight:hover,
+#inputWeight:hover,
+#colorPicker:hover {
+    box-shadow: 0 3.5px 3.5px -1px rgba(0, 0, 0, 0.25);
+    transition: all ease-in-out 0.25s;
+}
+
+#submit {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    background: #ff0000ab;
+    position: relative;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 10px -2px rgba(245, 0, 0, 0.5);
+}
+
+#submit:hover,
+#submit:focus {
+    background: #35e400ab;
+    box-shadow: 0 3px 3px -2px rgba(0, 245, 0, 0.5);
+    transition: all ease-in-out 0.5s;
+    outline: none !important;
+}
+
+#canvas {
+    margin: 0 75px;
+    padding: 25px;
+}
