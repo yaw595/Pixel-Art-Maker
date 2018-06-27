@@ -18,7 +18,7 @@ function makeGrid(x, y) {
     $('tr').remove();
 
     // Your code goes here!
-    //TODO: Create rows and columns using nested loops (both FOR and While)
+    //TODO: Create rows and columns using nested loops
 
     for (var i = 1; i <= x; i++) {
         $('#pixelCanvas').append('<tr id=table' + i + '></tr>'); //Columns
