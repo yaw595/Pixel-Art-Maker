@@ -21,6 +21,6 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 ## Welcome! This is my *Udacity Pixel Art Maker Project*.
 
 Here is My reposiry for Final Udacity Front-End Developer Project.
-Click the link below to chech it out and let me know what you think. I hope you enjoy it.
-(https://yaw595.github.io/Pixel-Art-Maker/)
+Click the link below to check it out and let me know what you think. Have fun and express your artistic side.
+https://yaw595.github.io/Pixel-Art-Maker/
 
