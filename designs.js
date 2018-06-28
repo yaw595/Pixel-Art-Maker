@@ -1,5 +1,6 @@
 // Select color input
-const c = document.getElementById('colorPicker');
+const c = $('#colorPicker');
+
 // Select size input
 const h = $('#inputHeight');
 const w = $('#inputWeight');
@@ -13,17 +14,21 @@ $('#sizePicker').submit(function (event) {
 
     // Log the code to console to make sure it works
     // console.log('Heitht: ' + height + ' Width: ' + width);
+
+    //TODO: Alert user when grid is created (My Style)
+    $('#sMsg').fadeIn(2000).delay(2000).fadeOut(500);
 })
 
-function makeGrid(rows, columns) {
+
+function makeGrid(x, y) {
     $('tr').remove();
 
     // Your code goes here!
     //TODO: Create rows and columns using nested loops
 
-    for (let i = 1; i <= rows; i++) {
+    for (let i = 1; i <= x; i++) {
         $('#pixelCanvas').append('<tr id=table' + i + '></tr>'); //Columns
-        for (let j = 1; j <= columns; j++) {
+        for (let j = 1; j <= y; j++) {
             $('#table' + i).append('<td></td>'); // Rows
             $('#canvas').css('box-shadow', '0 5px 10px -2px rgba(0, 0, 0, 0.5)'); // Adding a shadow to the canvas background
         }
