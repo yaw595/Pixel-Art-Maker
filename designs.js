@@ -1,28 +1,29 @@
 // Select color input
-
+const c = document.getElementById('colorPicker');
 // Select size input
-var height, width, color;
+const h = $('#inputHeight');
+const w = $('#inputWeight');
 
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function (event) {
     event.preventDefault();
-    height = $('#inputHeight').val();
-    width = $('#inputWeight').val();
+    let height = h.val();
+    let width = w.val();
     makeGrid(height, width);
 
     // Log the code to console to make sure it works
-    //console.log('Heitht: ' + height + ' Width: ' + width);
+    // console.log('Heitht: ' + height + ' Width: ' + width);
 })
 
-function makeGrid(x, y) {
+function makeGrid(rows, columns) {
     $('tr').remove();
 
     // Your code goes here!
     //TODO: Create rows and columns using nested loops
 
-    for (var i = 1; i <= x; i++) {
+    for (let i = 1; i <= rows; i++) {
         $('#pixelCanvas').append('<tr id=table' + i + '></tr>'); //Columns
-        for (var j = 1; j <= y; j++) {
+        for (let j = 1; j <= columns; j++) {
             $('#table' + i).append('<td></td>'); // Rows
             $('#canvas').css('box-shadow', '0 5px 10px -2px rgba(0, 0, 0, 0.5)'); // Adding a shadow to the canvas background
         }
@@ -30,7 +31,7 @@ function makeGrid(x, y) {
 
     //TODO: Apply pixel color
     $('td').click(function pixColor() {
-        color = $('#colorPicker').val();
+        let color = c.val();
 
         if ($(this).attr('style')) { //Check if the grid cell has a style attribute
             $(this).removeAttr('style'); //Remove the *DEFAULT style attribute
